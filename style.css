@@ -720,6 +720,17 @@ textarea.contact-input {
   .skills-progress-box {
     margin-top: 10px;
   }
+
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .skills-progress-box {
+      margin-top: 10px;
+    }
+  }
 }
 
 
