@@ -1,22 +1,23 @@
 :root {
   /* colors */
 
-  --cadet-blue-crayola: hsl(240, 10%, 70%);
-  --gold-web-golden: hsl(50, 100%, 54%);
-  --vivid-sky-blue: hsl(196, 84%, 63%);
-  --midnight-blue: hsl(231, 83%, 25%);
-  --minion-yellow: hsl(50, 100%, 64%);
-  --independence: hsl(225, 24%, 27%);
-  --orange-soda: hsl(7, 96%, 61%);
-  --space-cadet: hsl(243, 23%, 18%);
-  --fiery-rose: hsl(353, 83%, 65%);
-  --klein-blue: hsl(230, 80%, 39%);
-  --bluetiful: hsl(222, 88%, 55%);
-  --glaucous: hsl(230, 52%, 63%);
-  --manatee: hsl(254, 7%, 65%);
-  --rufous: hsl(2, 85%, 35%);
+ 
+  --cadet-blue-crayola: hsl(240, 10%, 60%);
+  --gold-web-golden: hsl(50, 100%, 40%);
+  --vivid-sky-blue: hsl(196, 84%, 53%);
+  --midnight-blue: hsl(231, 83%, 15%);
+  --minion-yellow: hsl(50, 100%, 54%);
+  --independence: hsl(225, 24%, 17%);
+  --orange-soda: hsl(7, 96%, 50%);
+  --space-cadet: hsl(243, 23%, 8%);
+  --fiery-rose: hsl(353, 83%, 45%);
+  --klein-blue: hsl(230, 80%, 29%);
+  --bluetiful: hsl(222, 88%, 45%);
+  --glaucous: hsl(230, 52%, 53%);
+  --manatee: hsl(254, 7%, 55%);
+  --rufous: hsl(2, 85%, 30%);
   --black: hsl(0, 0%, 0%);
-  --white: hsl(0, 0%, 100%);
+  --white: hsl(0, 0%, 90%);
 
   /* typography */
 
@@ -314,6 +315,7 @@ body {
 
 .hero-banner img {
   border-radius: inherit;
+  filter: brightness(0.5);
 }
 
 .hero-content {
@@ -356,6 +358,7 @@ body {
 
 .about {
   padding-block-start: 120px;
+  margin-top: -190px;
 }
 
 .about-banner {
@@ -706,6 +709,25 @@ textarea.contact-input {
   }
 }
 
+
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .skills-progress-box {
+    margin-top: 10px;
+  }
+}
+
+
+/* @media screen and (max-width: 768px) {
+  .img-cover {
+    max-width: 100%;
+    height: auto;
+  }
+} */
 /* responsive for larger than 992px screen */
 
 @media (min-width: 992px) {
